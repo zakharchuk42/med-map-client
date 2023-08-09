@@ -1,4 +1,4 @@
-import { DrugsType } from '@/api/dto/sript.dto'
+import { DrugsType } from '@/dto/sript.dto'
 
 export interface DrugsProps {
 	myDrugs: DrugsType[] | []

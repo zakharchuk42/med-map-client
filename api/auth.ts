@@ -4,7 +4,7 @@ import {
 	LoginResponseDTO,
 	RegisterFormDTO,
 	RegisterResponseDTO,
-} from '@/api/dto/auth.dto'
+} from '@/dto/auth.dto'
 import { destroyCookie } from 'nookies'
 
 export const login = async (

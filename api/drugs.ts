@@ -3,7 +3,7 @@ import {
 	DeleteDrugsResponseDTO,
 	DrugsDTO,
 	DrugsResponseDTO,
-} from '@/api/dto/drugs.dto'
+} from '@/dto/drugs.dto'
 
 export const addDrugs = async (
 	drugs: DrugsDTO,

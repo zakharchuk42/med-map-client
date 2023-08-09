@@ -1,4 +1,4 @@
-import { FileType } from '@/api/dto/sript.dto'
+import { FileType } from '@/dto/sript.dto'
 
 export interface FileProps {
 	files: FileType[]

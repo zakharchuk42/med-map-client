@@ -1,4 +1,4 @@
-import { FileType } from '@/api/dto/sript.dto'
+import { FileType } from '@/dto/sript.dto'
 import { ScriptType } from '@/components/Widgets/Visits/List/types'
 
 interface DataI extends FileType {

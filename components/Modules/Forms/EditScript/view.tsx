@@ -9,7 +9,7 @@ import UiBox from '@/components/Ui/UiBox/view'
 import { isHaveLength } from '@/utils/isHaveLength'
 import { ColorsEnum } from '@/components/Ui/UiButton/types'
 import { EditScriptFormProps } from '@/components/Modules/Forms/EditScript/types'
-import { UpdateScriptDTO } from '@/api/dto/sript.dto'
+import { UpdateScriptDTO } from '@/dto/sript.dto'
 import { useHandlerReq } from '@/hooks/useHandlerReq'
 
 const EditScriptForm: React.FC<EditScriptFormProps> = ({

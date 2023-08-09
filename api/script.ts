@@ -5,7 +5,7 @@ import {
 	ScriptResponseDTO,
 	UpdateScriptDTO,
 	UpdateScriptResponseDTO,
-} from '@/api/dto/sript.dto'
+} from '@/dto/sript.dto'
 import { AddScriptForm } from '@/components/Modules/Forms/Script/types'
 
 export const getScript = async (scriptId: number): Promise<ScriptDTO> => {

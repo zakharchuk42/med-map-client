@@ -1,6 +1,6 @@
 import React from 'react'
 import { GridColDef } from '@mui/x-data-grid'
-import { DrugsType } from '@/api/dto/sript.dto'
+import { DrugsType } from '@/dto/sript.dto'
 import UiTableDate from '@/components/Ui/UiTableDate/view'
 import UiBox from '@/components/Ui/UiBox/view'
 import DeleteDrugs from '@/components/Modules/Script/components/Drugs/components/CardList/components/DeleteDrugs/view'

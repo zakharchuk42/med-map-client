@@ -1,4 +1,4 @@
-import { ScriptDTO } from '@/api/dto/sript.dto'
+import { ScriptDTO } from '@/dto/sript.dto'
 
 export interface MyScriptType extends ScriptDTO {}
 

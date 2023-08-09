@@ -5,7 +5,7 @@ import {
 	UpdateVisitResponseDTO,
 	VisitDTO,
 	VisitResponseDTO,
-} from '@/api/dto/visit.dto'
+} from '@/dto/visit.dto'
 import axios from '@/@core/axios'
 
 export const addVisit = async (visit: VisitDTO): Promise<VisitResponseDTO> => {
