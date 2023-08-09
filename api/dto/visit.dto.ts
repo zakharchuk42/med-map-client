@@ -24,7 +24,7 @@ export interface UpdateVisitResponseDTO extends DeleteVisitResponseDTO {}
 
 //------------------------------------------------------------------
 export interface DeleteVisitDTO {
-	id: number
+	id: number | string
 }
 
 export interface DeleteVisitResponseDTO extends VisitResponseDTO {}
