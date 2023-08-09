@@ -1,0 +1,46 @@
+.card {
+    width: 100%;
+    background: var(--colors-white);
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+
+    &_withHeader {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__header {
+        padding: 10px 20px;
+        left: 0;
+        top: 0;
+        width: 100%;
+
+        &_blue {
+            background-color: var(--colors-blue-light);
+        }
+
+        &_red {
+            background-color: var(--colors-red-light);
+        }
+
+
+        &_gray {
+            background-color: var(--colors-gray-light);
+        }
+
+        &_green {
+            background-color: var(--colors-green-light);
+        }
+
+        &_orange {
+            background-color: var(--colors-orange-light);
+        }
+    }
+
+    &__body {
+        padding: 20px;
+        flex-grow: 1;
+    }
+}

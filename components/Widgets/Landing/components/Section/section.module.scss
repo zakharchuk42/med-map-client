@@ -1,0 +1,28 @@
+.section {
+    display: flex;
+    flex-grow: 1;
+    height: 100vh;
+    padding-top: 10vh;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    justify-content: center;
+    position: relative;
+
+    &__block {
+        max-width: 75vw;
+        margin: 0 auto;
+    }
+
+    &__title {
+        text-align: center;
+        margin-bottom: 3rem;
+    }
+
+    &__text {
+        text-align: center;
+    }
+
+    &__lsit {
+
+    }
+}

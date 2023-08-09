@@ -1,0 +1,16 @@
+.cardList {
+
+    &__form {
+        visibility: hidden;
+        opacity: 0;
+        width: 100%;
+        height: 0;
+        transition: .3s;
+
+        &_open {
+            visibility: visible;
+            opacity: 1;
+            height: 150px;
+        }
+    }
+}

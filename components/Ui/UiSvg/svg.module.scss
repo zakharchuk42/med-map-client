@@ -1,0 +1,14 @@
+.svgWrapper {
+    cursor: pointer;
+    background: transparent;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    transition: .4s;
+    border-radius: 6px;
+    color: var(--colors-gray);
+
+    &:hover {
+        transform: scale(1.2);
+    }
+}

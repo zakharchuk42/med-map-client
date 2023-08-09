@@ -1,0 +1,29 @@
+.textarea {
+    width: 100%;
+    background-color: transparent;
+    resize: none;
+    font-size: 14px;
+    font-family: var(--font-mono);
+    outline: none;
+    border: 1px solid #cecece;
+    border-radius: 6px;
+    padding: 0 10px;
+    transition: .2s;
+
+    &__label {
+        font-size: 12px;
+        color: var(--colors-gray);
+        margin-bottom: 5px;
+    }
+
+    &:focus-visible {
+        border-bottom: 1px solid var(--colors-green);
+    }
+
+    &:disabled {
+        color: var(--colors-dark);
+        border: 1px solid transparent;
+        overflow: scroll !important;
+        padding: 0;
+    }
+}

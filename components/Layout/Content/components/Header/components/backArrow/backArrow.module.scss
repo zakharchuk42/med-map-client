@@ -1,0 +1,9 @@
+.backArrow {
+    border: 1px solid var(--colors-gray);
+    border-radius: 6px;
+    transition: .3s;
+
+    &:hover {
+        background-color: var(--colors-gray-light);
+    }
+}

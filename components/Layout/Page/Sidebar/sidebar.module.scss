@@ -1,0 +1,17 @@
+.sidebar {
+    position: relative;
+    width: 270px;
+    min-width: 270px;
+    padding: 20px;
+    background: var(--colors-white);
+    height: 100%;
+    border-top: 1px solid var(--colors-gray-light);
+    box-shadow: var(--box-shadow);
+    overflow: hidden;
+
+    &__logoBg {
+        position: absolute;
+        left: -120%;
+        top: 250px;
+    }
+}

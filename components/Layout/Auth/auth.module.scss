@@ -1,0 +1,24 @@
+.auth {
+    display: flex;
+    height: 100%;
+    background: var(--colors-white);
+
+    &__image {
+        position: relative;
+        width: 50%;
+    }
+
+    &__logoBg {
+        position: absolute;
+        transform: translate(-40%, -30%);
+    }
+
+    &_revers {
+        flex-direction: row-reverse;
+
+        .auth__logoBg {
+            position: absolute;
+            transform: translate(30%, -20%);
+        }
+    }
+}

@@ -1,0 +1,64 @@
+.react-datepicker {
+    border-color: #bebfc0;
+
+    &__input-container {
+        height: 35px;
+
+        input {
+            width: 100%;
+            padding: 10px 15px;
+            border: 1px solid #bebfc0;
+            background: transparent;
+            border-radius: 4px;
+            cursor: pointer;
+            vertical-align: top;
+            display: block;
+            height: 40px;
+
+        }
+    }
+
+    &__header {
+        background-color: var(--colors-blue-light);
+        border-bottom: 1px solid #bebfc0;
+    }
+
+    &__triangle {
+        &:after {
+            border-bottom-color: var(--colors-blue-light);
+        }
+    }
+
+    &__navigation-icon {
+        &:before {
+            border-color: var(--colors-blue);
+        }
+    }
+
+    &__day {
+        color: var(--colors-blue);
+
+        &--today {
+            border-bottom: 1px solid var(--colors-blue);
+        }
+
+        &--selected {
+            background-color: var(--colors-blue-light);
+            border: 1px solid var(--colors-blue);
+            font-weight: 700;
+
+            &:hover {
+                background-color: var(--colors-blue-light);
+                border: 1px solid var(--colors-blue);
+            }
+        }
+
+        &--outside-month {
+            color: var(--colors-dark);
+        }
+
+        &--disabled {
+            color: var(--colors-gray-light);
+        }
+    }
+}

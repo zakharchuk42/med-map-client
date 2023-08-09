@@ -1,0 +1,78 @@
+.first {
+    display: flex;
+    flex-grow: 1;
+    height: 100vh;
+    top: 0;
+    translate: 0 calc(-1% * (max(var(--landing-scroll),  25) - 25) * 100 / 75);
+    --background-opacity: calc(100% - 1% * min(var(--landing-scroll),  30) * 100 / 30);
+    position: fixed;
+    z-index: 1;
+
+    &__left {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 3rem;
+        background-color: rgb(248, 250, 249, var(--background-opacity));
+        gap: 3rem;
+    }
+
+    &__title {
+        max-width: 570px;
+    }
+
+
+    &__text {
+        max-width: 75%;
+    }
+
+    &__buttons {
+        display: flex;
+        gap: 2rem;
+    }
+
+    &__right {
+        display: flex;
+        flex-grow: 1;
+        background: linear-gradient(210.65deg, rgb(152, 157, 157, var(--background-opacity)) 0%, rgb(189, 194, 194, var(--background-opacity)) 100%)
+    }
+
+    &__addScript {
+        img {
+            translate: 35% 10%;
+        }
+    }
+
+    &__addScriptImage {
+        position: absolute;
+        border-radius: var(--border-radius);
+        box-shadow: rgba(99, 99, 99, 0.2) 0 2px 8px 0;
+        z-index: 2;
+        right: -10%;
+        bottom: -5%;
+        translate: calc(1% * (max(var(--landing-scroll),  15) - 15) * 80 / 65) 0;
+    }
+
+    &__signInImage {
+        width: 420px;
+        height: auto;
+        position: absolute;
+        border-radius: var(--border-radius);
+        box-shadow: rgba(99, 99, 99, 0.2) 0 2px 8px 0;
+        z-index: 2;
+        right: 30%;
+        top: 20%;
+        translate: calc(-1% * (max(var(--landing-scroll),  10) - 25) * 80 / 155) calc(-1% * (max(var(--landing-scroll),  10) - 45) * 200 / 75);
+    }
+
+    &__visit {
+        position: absolute;
+        border-radius: var(--border-radius);
+        box-shadow: rgba(99, 99, 99, 0.2) 0 2px 8px 0;
+        z-index: 2;
+        right: 10%;
+        top: -23%;
+        translate: calc(1% * (max(var(--landing-scroll),  30) - 25) * 100 / 75) 0;
+    }
+}

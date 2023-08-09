@@ -1,0 +1,24 @@
+.images {
+    & > * {
+        border-radius: var(--border-radius) var(--border-radius) 0 0;
+        box-shadow: rgba(0, 0, 0, 0.25) 0 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+        height: auto;
+        position: fixed;
+        width: 90vw;
+        bottom: 0;
+        left: 5vw;
+        translate: 0 120%;
+        transition: translate 250ms ease-in-out;
+        z-index: 2;
+    }
+
+    & > .landing_show {
+        translate: 0 0;
+    }
+
+    & > .landing__topImage {
+        --landing-value: min(var(--landing-scroll), 30) * 50 / 30;
+        width: calc(40vw + 1vw * var(--landing-value));
+        transform: translateY(calc(50px - 1px * var(--landing-value)));
+    }
+}

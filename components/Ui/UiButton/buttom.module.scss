@@ -1,0 +1,99 @@
+.button {
+    cursor: pointer;
+    text-align: center;
+    border-radius: 6px;
+    position: relative;
+    font-size: var(--font-mono);
+    transition: .3s;
+    border: none;
+    max-height: 36px;
+
+    &:hover {
+        color: var(--colors-white);
+    }
+
+
+    &__color {
+        &_blue {
+            background: var(--colors-blue-light);
+            color: var(--colors-blue);
+
+            &:hover {
+                background: var(--colors-blue);
+            }
+        }
+
+        &_green {
+            background: var(--colors-green-light);
+            color: var(--colors-green);
+
+            &:hover {
+                background: var(--colors-green);
+            }
+        }
+
+        &_red {
+            background: var(--colors-red-light);
+            color: var(--colors-red);
+
+            &:hover {
+                background: var(--colors-red);
+
+            }
+        }
+
+        &_orange {
+            background: var(--colors-orange-light);
+            color: var(--colors-orange);
+
+            &:hover {
+                background: var(--colors-orange);
+            }
+        }
+
+        &_gray {
+            background: var(--colors-gray-light);
+            color: var(--colors-gray);
+
+            &:hover {
+                background: var(--colors-gray);
+            }
+        }
+
+    }
+
+    &__size {
+        &_standard {
+            min-width: 160px;
+            padding: 10px 35px;
+        }
+
+        &_small {
+            min-width: 130px;
+            padding: 5px 10px;
+        }
+
+        &_big {
+            min-width: 200px;
+            padding: 15px 20px;
+        }
+    }
+
+    &_disabled {
+        background-color: var(--colors-gray-light);
+        color: var(--colors-white);
+        pointer-events: none;
+    }
+
+    &__text {
+        letter-spacing: 1px;
+        position: relative;
+    }
+
+    &__loader {
+        position: absolute;
+        left: -20px;
+        top: 1px;
+    }
+
+}

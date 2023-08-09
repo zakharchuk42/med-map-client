@@ -1,0 +1,38 @@
+.loader {
+    border-radius: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+
+    &__size {
+        &_sm {
+            width: 15px;
+            height: 15px;
+            border: 2px solid var(--colors-blue);
+            border-bottom-color: #FF3D00;
+        }
+
+        &_md {
+            width: 25px;
+            height: 25px;
+            border: 4px solid var(--colors-blue);
+            border-bottom-color: #FF3D00;
+        }
+
+        &_lg {
+            width: 45px;
+            height: 25px;
+            border-bottom-color: #FF3D00;
+            border: 6px solid var(--colors-blue);
+        }
+    }
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}

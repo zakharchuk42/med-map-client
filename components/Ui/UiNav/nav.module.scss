@@ -1,0 +1,34 @@
+.nav {
+    ul {
+        display: flex;
+        flex-direction: column;
+        gap: 3px;
+    }
+
+    li {
+        flex: 1;
+        cursor: pointer;
+    }
+
+    a {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        gap: 10px;
+        text-decoration: none;
+        border-radius: var(--border-radius);
+        padding: 10px;
+        color: var(--colors-dark);
+        transition: all .3s ease;
+
+        &:hover {
+            background-color: var(--colors-blue-light);
+            color: var(--colors-blue);
+        }
+    }
+
+    &__active {
+        background-color: var(--colors-blue-light);
+        color: var(--colors-blue) !important;
+    }
+}

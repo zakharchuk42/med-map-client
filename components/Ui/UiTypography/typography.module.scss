@@ -1,0 +1,76 @@
+.typography {
+
+    &__color {
+        &_dark {
+            color: var(--colors-dark);
+        }
+
+        &_white {
+            color: var(--colors-white);
+        }
+
+        &_gray {
+            color: var(--colors-gray);
+        }
+
+        &_gray_l {
+            color: var(--colors-gray-light);
+        }
+
+        &_green {
+            color: var(--colors-green)
+        }
+
+        &_blue {
+            color: var(--colors-blue);
+        }
+
+        &_red {
+            color: var(--colors-red);
+        }
+
+        &_orange {
+            color: var(--colors-orange);
+        }
+    }
+
+    &__variant {
+        &_body {
+            font-size: 14px;
+        }
+
+        &_h1 {
+            font-size: 28px;
+        }
+
+        &_h2 {
+            font-size: 22px;
+        }
+
+        &_subtitle {
+            font-size: 18px;
+        }
+
+        &_small {
+            font-size: 12px;
+        }
+    }
+
+    &_semibold {
+        font-weight: 500;
+    }
+
+    &_bold {
+        font-weight: 700;
+    }
+
+    &__align {
+        &_center {
+            text-align: center;
+        }
+
+        &_right {
+            text-align: right;
+        }
+    }
+}

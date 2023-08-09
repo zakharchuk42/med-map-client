@@ -1,0 +1,113 @@
+@import 'react-toastify/dist/ReactToastify.css';
+
+:root {
+	--font-mono: Roboto, sans-serif;
+	--border-radius: 12px;
+	--box-shadow: 0 10px 13px rgba(17, 38, 146, 0.05);
+
+	//COLORS
+	--colors-dark: #232D42;
+	--colors-white: #F7F9FA;
+	--colors-gray: #919699;
+	--colors-gray-light: #F1F3F4;
+	--colors-green: #147A3F;
+	--colors-green-light: rgba(26, 160, 83, 0.2);
+	--colors-blue: #3A57E8;
+	--colors-blue-light: rgba(58, 87, 232, 0.2);
+	--colors-red: #C03221;
+	--colors-red-light: rgba(192, 50, 33, 0.2);
+	--colors-orange: #F16A1B;
+	--colors-orange-light: rgba(241, 106, 27, 0.2);
+
+	//PX
+	--px-sm: 8px;
+	--px-md: 12px;
+	--px-lg: 16px;
+	--px-xl: 22px;
+	--px-xxl: 30px;
+
+	--landing-scroll: 0;
+}
+
+@font-face {
+	font-display: swap;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: 400;
+	src: url(../public/fonts/Roboto-Regular.woff) format('woff');
+}
+
+@font-face {
+	font-display: swap;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: 500;
+	src: url(../public/fonts/Roboto-Medium.woff) format('woff');
+}
+
+@font-face {
+	font-display: swap;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: 700;
+	src: url(../public/fonts/Roboto-Bold.woff) format('woff');
+}
+
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+html,
+body {
+	font-family: var(--font-mono);
+	color: var(--colors-dark);
+	font-size: 14px;
+	width: 100vw;
+	height: 100vh;
+	padding: 0;
+}
+
+body {
+	background-color: #e9ecef;
+	overflow-x: hidden;
+}
+
+ul, li {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+body::-webkit-scrollbar {
+	width: 8px;
+}
+
+body::-webkit-scrollbar-button {
+	background-color: transparent;
+}
+
+body::-webkit-scrollbar-thumb {
+	background-color: var(--colors-gray);
+	border-radius: var(--border-radius);
+}
+
+a {
+	text-decoration: none;
+	color: var(--colors-blue);
+	transition: all .3s ease;
+
+	&:hover {
+		color: #1962e0;
+		text-decoration: underline;
+	}
+}
+
+p {
+	line-height: 1.5;
+}
+
+main {
+	height: 100vh;
+}

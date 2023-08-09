@@ -1,0 +1,16 @@
+.logout {
+    cursor: pointer;
+    color: var(--colors-blue);
+    background-color: var(--colors-blue-light);
+    font-size: 12px;
+    padding: 5px 10px;
+    border-radius: 6px;
+    transition: all .3s ease;
+    outline: none;
+    border: none;
+
+    &:hover {
+        color: var(--colors-white);
+        background-color: var(--colors-blue);
+    }
+}
