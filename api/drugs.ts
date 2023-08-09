@@ -13,7 +13,7 @@ export const addDrugs = async (
 }
 
 export const deleteDrugs = async (
-	drugsId: number,
+	drugsId: number | string,
 ): Promise<DeleteDrugsResponseDTO> => {
 	return (await axios.delete(`/drugs?drugsId=${drugsId}`)).data
 }
