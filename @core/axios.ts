@@ -1,7 +1,7 @@
 import axios from 'axios'
 import { parseCookies } from 'nookies'
 
-axios.defaults.baseURL = 'http://localhost:4000'
+axios.defaults.baseURL = 'https://med-map-server-production.up.railway.app'
 
 axios.interceptors.request.use((config) => {
 	if (typeof window !== 'undefined') {
